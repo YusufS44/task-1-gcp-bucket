@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around; /* Ensures content is evenly spaced */
+            margin: 20px;
+        }
+
+        .responsive-video {
+            width: auto;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            flex-direction: column;
+            align-items: center; /* Center aligns the videos */
+            gap: 20px;
+        }
+
+        .left-pictures, .right-pictures {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .left-pictures img, .right-pictures img, .video iframe {
+            width: 100%; /* Adjusts width to fill the container */
+            height: auto; /* Keeps aspect ratio intact */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://storage.googleapis.com/windu-survives-1/windu%20banner.png" alt="Banner">
+    </div>
+    <div class="content">
+        <div class="left-pictures">
+            <img src="https://storage.googleapis.com/windu-survives-1/kofi_yusuf_designs_A_realistic_photo_of_Mase_Windu_at_night_-_a6aca686-c7ac-4d15-bf1c-742c28a5528c_0.png" alt="Picture 1">
+            <img src="https://storage.googleapis.com/windu-survives-1/kofi_yusuf_designs_Mase_Windu_in_Wakanda._--v_4_7c34fdf4-4531-4b9b-8f6e-f528343b15a0_2.png" alt="Picture 3">
+        </div>
+        <div class="video">
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/sPnmW7zu2fY?si=202jpsMVxy_Uhl-f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/cxFOmdha2Ec?si=yCRfYXqTYTeVjyRf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="right-pictures">
+            <img src="https://storage.googleapis.com/windu-survives-1/kofi_yusuf_designs_Iron_Man_as_a_samurai_--v_4_74473dd2-7854-4594-bec8-46d6636a23a2_2.png" alt="Picture 2">
+            <img src="https://storage.googleapis.com/windu-survives-1/kofi_yusuf_designs_Mase_Windu_in_Wakanda._--v_4_7c34fdf4-4531-4b9b-8f6e-f528343b15a0_3.png" alt="Picture 4">
+        </div>
+    </div>
